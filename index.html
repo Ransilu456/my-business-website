@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyBook - Online Booking Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-calendar-check"></i>
+                Easy<span>Book</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#search"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
+                <li><a href="#bookings"><i class="fas fa-calendar"></i> My Bookings</a></li>
+                <li><a href="#account" class="account-btn"><i class="fas fa-user"></i> Account</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Book Services with Ease</h1>
+            <p>Find and book the best services in your area</p>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="What are you looking for?">
+                    <input type="text" placeholder="Location">
+                    <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <h2>Popular Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="card-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Restaurants</h3>
+                <p>Book tables at top restaurants</p>
+                <span class="available">1,234 Available</span>
+            </div>
+            <div class="category-card">
+                <div class="card-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <h3>Spa & Beauty</h3>
+                <p>Pamper yourself</p>
+                <span class="available">867 Available</span>
+            </div>
+            <div class="category-card">
+                <div class="card-icon">
+                    <i class="fas fa-dumbbell"></i>
+                </div>
+                <h3>Fitness</h3>
+                <p>Book fitness classes</p>
+                <span class="available">543 Available</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured">
+        <h2>Featured Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=800" alt="Luxury Spa">
+                    <span class="price">$49</span>
+                </div>
+                <div class="service-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(128)</span>
+                    </div>
+                    <h3>Luxury Spa Treatment</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Downtown</p>
+                    <div class="time-slots">
+                        <button class="time-slot">10:00</button>
+                        <button class="time-slot">14:00</button>
+                        <button class="time-slot">16:00</button>
+                    </div>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Fine Dining">
+                    <span class="price">$75</span>
+                </div>
+                <div class="service-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(256)</span>
+                    </div>
+                    <h3>Fine Dining Experience</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> City Center</p>
+                    <div class="time-slots">
+                        <button class="time-slot">18:00</button>
+                        <button class="time-slot">19:30</button>
+                        <button class="time-slot">21:00</button>
+                    </div>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800" alt="Fitness Class">
+                    <span class="price">$35</span>
+                </div>
+                <div class="service-info">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(189)</span>
+                    </div>
+                    <h3>Group Fitness Class</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Fitness Center</p>
+                    <div class="time-slots">
+                        <button class="time-slot">07:00</button>
+                        <button class="time-slot">09:00</button>
+                        <button class="time-slot">17:00</button>
+                    </div>
+                    <button class="book-now-btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Search</h3>
+                <p>Find the perfect service</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <h3>Select Date & Time</h3>
+                <p>Choose your preferred slot</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Book & Pay</h3>
+                <p>Secure your booking instantly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h2>About EasyBook</h2>
+                <p class="subtitle">Your Trusted Booking Partner</p>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>At EasyBook, we're revolutionizing the way you book services. Founded in 2025, our mission is to make booking seamless, fast, and reliable for everyone.</p>
+                        <ul class="about-features">
+                            <li><i class="fas fa-check-circle"></i> 100% Verified Service Providers</li>
+                            <li><i class="fas fa-check-circle"></i> Instant Booking Confirmation</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 Customer Support</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800" alt="About Us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2>Why Choose EasyBook?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Payments</h3>
+                    <p>Your transactions are protected with industry-leading security measures.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Real-Time Availability</h3>
+                    <p>See up-to-date schedules and book instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Verified Reviews</h3>
+                    <p>Make informed decisions with authentic customer feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"EasyBook made finding and booking services so simple! The interface is clean and intuitive."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+                        <p class="author-name">Sarah Johnson</p>
+                        <p class="author-location">New York</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I love how I can see real-time availability and book instantly. Great service!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Brown">
+                        <p class="author-name">Michael Brown</p>
+                        <p class="author-location">London</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <h2>Our Trusted Partners</h2>
+            <div class="partners-grid">
+                <img src="https://via.placeholder.com/150" alt="Partner 1">
+                <img src="https://via.placeholder.com/150" alt="Partner 2">
+                <img src="https://via.placeholder.com/150" alt="Partner 3">
+                <img src="https://via.placeholder.com/150" alt="Partner 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">How do I book a service?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Simply search for your desired service, select a time slot, and complete the booking process.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is my payment secure?<i class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">
+                        <p>Yes, we use industry-standard encryption to protect all transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section brand">
+                <div class="logo">
+                    <i class="fas fa-calendar-check"></i>
+                    Easy<span>Book</span>
+                </div>
+                <p>Your one-stop platform for all your booking needs. Find and book services with just a few clicks.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#search">Search Services</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#bookings">My Bookings</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-categories">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Spa & Beauty</a></li>
+                    <li><a href="#">Fitness</a></li>
+                    <li><a href="#">Health</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                    <li><i class="fas fa-envelope"></i> support@easybook.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Booking Street<br>New York, NY 10001</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EasyBook. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
